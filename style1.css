@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+nav{
+    border: 2px solid green;
+    height: 3vmax;
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    border: 2px solid salmon;
+    width: 20%;
+}
+
+.left >a{
+    text-decoration: none;
+    color: crimson;
+    font-size: 2vmax;
+    border: 1px solid yellow;
+    
+}
+
+.mid{
+    border: 2px solid rgb(116, 114, 250);
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mid >a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    border: 2px solid rgb(250, 248, 114);
+    width: 20%;
+}
