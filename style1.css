@@ -7,23 +7,24 @@ nav{
     height: 3vmax;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .left{
-    border: 2px solid salmon;
+    
     width: 20%;
+    display: flex;
 }
 
 .left >a{
     text-decoration: none;
     color: crimson;
     font-size: 2vmax;
-    border: 1px solid yellow;
     
 }
 
 .mid{
-    border: 2px solid rgb(116, 114, 250);
+    
     width: 60%;
     display: flex;
     justify-content: space-evenly;
@@ -38,7 +39,19 @@ nav{
     align-items: center;
 }
 
+.mid >a:hover{
+    border-bottom: 2px solid crimson;
+    color: crimson;
+}
+
 .right{
-    border: 2px solid rgb(250, 248, 114);
+    
     width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.right > img{
+    width: 2.5vmax;
+
 }
