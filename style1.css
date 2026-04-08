@@ -8,6 +8,14 @@ nav{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px black;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 10000;
+}
+
+*{
+    scroll-behavior: smooth;
 }
 
 .left{
@@ -55,18 +63,19 @@ nav{
 
 .right > img{
     width: 2.5vmax;
+    margin: 1vmax;
+    cursor: pointer;
 
 }
 
 .home{
     height: 90vh;
     display: flex;
-    background-image: linear-gradient(to right,rgb(124, 159, 192),rgb(124, 124, 212));
+    background-image: radial-gradient(rgb(230, 221, 255), rgb(184, 184, 223));
 }
 
 .container{
     width: 100%;
-    border: 1px solid green;
 }
 
 #rightContainer{
@@ -76,6 +85,165 @@ nav{
 }
 
 #rightContainer > img {
-    margin: 5vmax;
-    filter: drop-shadow(0 0 10px black);
+    margin: 7vmax;
+    filter: drop-shadow(0 0 20px black);
+}
+
+#leftContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2vmax;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#leftContainer > h1{
+    font-size: 5vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#leftContainer > h2{
+    font-size: 2vmax;
+    font-family: sans-serif;
+    margin-top: -8%;
+}
+
+#leftContainer > p{
+    margin-left: 2%;
+    font-size: 1.2vmax;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#leftContainer > button{
+    width: 11vmax;
+    padding: 0.6vmax;
+    border: none;
+    margin-left: 2%;
+    border-radius: 2vmax;
+    background-color: crimson;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#leftContainer > button:hover{
+    background-color: rgb(231, 8, 53);
+}
+
+
+#products > h1{
+    color: red;
+    text-align: center;
+    margin: 5vmax auto;
+    font-size: 2.5vmax;
+    border-bottom: 5px solid crimson;
+    padding: 1vmax;
+    width: 25vw;
+}
+
+.productsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.product{
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 1vmax;
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+}
+
+.product > img{
+    width: 20vmax;
+    border: 2px solid crimson;
+}
+
+.product > h4{
+    margin: 2%;
+}
+
+.product > h5{
+    margin: 0px;
+}
+
+.product:hover{
+    transform: translateY(-10px);
+}
+
+footer{
+    padding: 2vmax;
+    margin-top: 10vmax;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    align-items: center;
+}
+
+.LeftFooter{
+    width: 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LeftFooter > h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.LeftFooter > p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.LeftFooter >img{
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+.MidFooter{
+    width: 60%;
+    color: white;
+}
+
+.MidFooter >h1{
+    font-size: 4vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: crimson;
+    text-align: center;
+}
+
+.MidFooter > p{
+    max-width: 60%;
+    margin:1vmax auto;
+}
+
+.RightFooter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RightFooter > h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4vmax;
+    text-decoration: underline;
+    color: white;
+}
+
+.RightFooter > a{
+    text-decoration: none;
+    color: white;
+    margin: 0.5vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3vmax;
 }
